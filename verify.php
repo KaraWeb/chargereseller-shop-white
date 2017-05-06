@@ -153,13 +153,11 @@
 								<tbody>
 								<?php 
 									for ($i = 0; $i < $productCount; $i++) {
-										if ($key != 'pin') {
-											echo '<tr>';
-												foreach ($result['products']['details'][$i] as $key => $value) {
-													echo '<td class="ltr">' . $value .'</td>';
-												}
-											echo '</tr>';
-										}
+										echo '<tr>';
+											foreach ($result['products']['details'][$i] as $key => $value) {
+												echo '<td class="ltr">' . $value .'</td>';
+											}
+										echo '</tr>';
 									}
 								?>
 								</tbody>
