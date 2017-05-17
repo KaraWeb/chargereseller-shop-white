@@ -1,5 +1,5 @@
-var menus = ["شارژ مستقیم", "کارت شارژ", "شارژ وایمکس ایرانسل", "پرداخت قبض", "گیفت کارت", "آنتی ویروس"];
-var types = ["TopUp", "PIN", "WiMax", "Bill", "GiftCard", "Antivirus"];
+var menus = ["شارژ مستقیم", "کارت شارژ", "بسته اینترنت", "شارژ وایمکس ایرانسل", "پرداخت قبض", "گیفت کارت", "آنتی ویروس"];
+var types = ["TopUp", "PIN", "InternetPackage", "WiMax", "Bill", "GiftCard", "Antivirus"];
 ;(function (factory)
 {
     if (typeof define === 'function' && define.amd)
