@@ -52,8 +52,6 @@ jQuery(document).ready(function ($) {
 			DefaultOperator = 'WiMax';
 		}
 		
-		console.log(DefaultChargeKind + ' | ' + DefaultOperator + ' | ' + DefaultOperatorPhone);
-		
 		if (DefaultChargeKind == 'InternetPackage') {
 			if (DefaultOperator == 'IN-MTN-TDLTE') {
 				DefaultOperatorPhone = '094';
