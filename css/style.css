@@ -133,6 +133,9 @@ div#left {
   position: absolute;
   width: 326px;
 }
+.InternetPackage #left{
+	bottom: 200px !important;
+}
 div#content{
 	width:482px;
 	height: auto;
@@ -521,7 +524,7 @@ div.addScript {
 	margin: 0px;
 	width: 0px;
 }
-.addScript p>a>img {	
+.addScript p>a>img {
 	width: 0px;
 	height: 0px;
 }
@@ -691,7 +694,7 @@ div.operators.Bill > div, div.operators.TrafficCard > div, div.operators.GiftCar
 div.operators.GiftCard > div.MTN, div.operators.GiftCard > div.MCI, div.operators.GiftCard > div.RTL, div.operators.GiftCard > div.TAL {
 	display:none;
 }
-div.operators.InternetPackage > div.MTN, div.operators.InternetPackage > div.MCI, div.operators.InternetPackage > div.RTL, div.operators.InternetPackage > div.TAL {
+div.operators.InternetPackage > div.TAL {
 	display:none;
 }
 .irs {
@@ -1143,7 +1146,7 @@ div.connecting {
   margin-right: 25px;
   margin-top: 32px;
   padding-right: 25px;
-} 
+}
 div.verify div.Bill {
 	display:block!important;
 }
@@ -1222,7 +1225,7 @@ img.application {
 	text-align:justify!important;
 	margin:30px 0!important;
 }
-.bgs.application #content ul { 
+.bgs.application #content ul {
 	margin: 0;
 }
 .bgs.application #content li {
@@ -1302,7 +1305,7 @@ a.application {
 }
 div.save-information{
     text-align: right;
-    padding: 0 60px 2px; 
+    padding: 0 60px 2px;
 }
 div#content div#save-information{
 	box-shadow: 0px 0px 0px #000000;
@@ -1322,8 +1325,9 @@ div#content input#save-information{
 }
 
 /* InternetPackage */
-    .container.InternetPackage .InternetPackage {
+    .container.InternetPackage .InternetPackage{
         display:block;
+        width: 480px;
     }
     .container.InternetPackage .info .operator.InternetPackage {
         width:120px;
@@ -1391,9 +1395,9 @@ div#content input#save-information{
     .container.InternetPackage .amount-title {
         height: 25px;
     }
+
     .InternetPackage .operators {
-        margin: 0 auto;
-        width: 380px;
+	width: 700px !important;
     }
     .operators.InternetPackage {
         height: 10px;
@@ -1422,8 +1426,14 @@ div#content input#save-information{
         height: 55px;
         width: 120px;
     }
-	.sim-type-container label:not(:last-child) {
-		margin-left: 20px;
+	.sim-type-container{
+		width: 300px;
+        display: inline-block;
+	}
+	.sim-type-container label{
+		float: right;
+		width: 150px;
+		text-align: right;
 	}
 /* End InternetPackage */
 
