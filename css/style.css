@@ -116,15 +116,6 @@ div.container{
 .operator.RTL:hover {
 	background-position:-154px -4px;
 }
-.operator.TAL {
-	background:url("../img/mobile-operators.png") no-repeat 0 -92px;
-}
-.operator.TAL.active {
-	background-position:0 -4px;
-}
-.operator.TAL:hover {
-	background-position:0 -4px;
-}
 div#left {
   bottom: 90px;
   direction: rtl;
@@ -679,22 +670,16 @@ div.container.TopUp div.charge, div.container.PIN div.charge, div.container.WiMa
 div.container.Bill div.Bill {
 	display:block!important;
 }
-div.operators.TopUp div.TAL{
+div.operators.WiMax div.RTL,div.operators.WiMax div.RTL {
 	display:none;
 }
-div.operators.WiMax div.RTL, div.operators.WiMax div.TAL, div.operators.WiMax div.RTL {
-	display:none;
-}
-div.operators.WiMax div.MCI, div.operators.WiMax div.TAL, div.operators.WiMax div.RTL {
+div.operators.WiMax div.MCI, div.operators.WiMax div.RTL {
 	display:none;
 }
 div.operators.Bill > div, div.operators.TrafficCard > div, div.operators.GiftCard > div, div.operators.Antivirus > div {
 	display:none;
 }
-div.operators.GiftCard > div.MTN, div.operators.GiftCard > div.MCI, div.operators.GiftCard > div.RTL, div.operators.GiftCard > div.TAL {
-	display:none;
-}
-div.operators.InternetPackage > div.TAL {
+div.operators.GiftCard > div.MTN, div.operators.GiftCard > div.MCI, div.operators.GiftCard > div.RTL {
 	display:none;
 }
 .irs {
