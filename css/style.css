@@ -563,7 +563,7 @@ div.payment-gateways p{
 	padding-bottom:10px;
 }
 div.payment-gateways ul {
-	width:335px;
+    width:348px !important;
 	margin:0 auto;
 	padding:0;
 }
@@ -598,6 +598,7 @@ div.payment-gateways li.bank-Saman {background-position:-90px -45px;}
 div.payment-gateways li.bank-Melli {background-position:-135px -45px;}
 div.payment-gateways li.bank-Fanava {background-position:-180px -45px;}
 div.payment-gateways li.bank-Zarinpal {background-position:-225px -45px;}
+div.payment-gateways li.bank-Emtiyaz {background-position:-270px -45px;}
 /* Active */
 div.payment-gateways li.active.bank-Parsian {background-position:0 0;}
 div.payment-gateways li.active.bank-Mellat {background-position:-45px 0;}
@@ -605,6 +606,7 @@ div.payment-gateways li.active.bank-Saman {background-position:-90px 0;}
 div.payment-gateways li.active.bank-Melli {background-position:-135px 0;}
 div.payment-gateways li.active.bank-Fanava {background-position:-180px 0;}
 div.payment-gateways li.active.bank-Zarinpal {background-position:-225px 0;}
+div.payment-gateways li.active.bank-Emtiyaz {background-position:-270px 0;}
 div.Magiccharge, div.NonCreditMTN {
 	text-align: right;
 	padding: 0 60px 2px;
