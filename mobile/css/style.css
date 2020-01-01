@@ -2391,11 +2391,11 @@ p {
 	div.payment-gateways li.bank-Fanava {
 		background-position: -215px -53px
 	}
-	div.payment-gateways li.bank-Zarinpal {
-		background-position: -269px -53px
-	}
 	div.payment-gateways li.bank-Emtiyaz {
 		background-position: -320px -53px
+	}
+	div.payment-gateways li.bank-Zarinpal {
+		background-position: -269px -53px
 	}
 	div.payment-gateways li.bank-Parsian {
 		background-position: -8px -54px
