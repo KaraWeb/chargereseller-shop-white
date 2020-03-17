@@ -26,8 +26,18 @@
 					$transactionType = explode('-', $result['products']['type']);
 					$transactionType = $transactionType[0];
 					if ($transactionType == 'Bill') {
-						$billTypesPersian = array("آب", "بــرق", "گـــاز", "تلفن ثابت", "تلفن همراه", "عوارض شهرداری","","", "جریمه راهنمایی و رانندگی");
-						$billTypesEnglish = array("water", "electricity", "gas", "telephone", "cellphone", "mayoralty","","", "police");
+						$billTypesPersian = array("آب", "بــرق", "گـــاز", "تلفن ثابت", "تلفن همراه", "عوارض شهرداری","","", "جریمه راهنمایی و رانندگی","بیمه پاسارگاد","سایر");
+						$billTypesEnglish = array("water", "electricity", "gas", "telephone", "cellphone", "mayoralty","","", "police","pasargad","others");
+						$billType = $result['products']['details']['billType'] - 1;
+						if($billType == -1){
+						    $billCoNum = substr($result['products']['details']['billId'],strlen($result['products']['details']['billId'])-5,3);
+						    if($billCoNum == 102){
+						        $billType = 9;
+                            }else{
+                                $billType = 10;
+                            }
+                        }
+
 			?>
 						<div id="left">
 							<img src="<?php echo $root; ?>/img/bill-success.png" class="success">
@@ -39,8 +49,8 @@
 									<tr>
 										<td>نوع قبض</td>
 										<td>
-											<span id="type" class="bill <?php echo $billTypesEnglish[$result['products']['details']['billType'] - 1]; ?>"></span>
-											<span id="type-title"><?php echo $billTypesPersian[$result['products']['details']['billType'] - 1]; ?></span>
+											<span id="type" class="bill <?php echo $billTypesEnglish[$billType]; ?>"></span>
+											<span id="type-title"><?php echo $billTypesPersian[$billType]; ?></span>
 										</td>
 									</tr>
 									<tr>
