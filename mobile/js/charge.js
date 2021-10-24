@@ -973,6 +973,8 @@ jQuery(document).ready(function ($) {
 		crossDomain: true,
 		success: function(data) {
 			products = data.products;
+            $('.support-number').html(data.support.phone || '');
+            $('.support-email').html(data.support.email || '');
 			paymentGateways = data.paymentGateways;
 			initailize();
 		},
