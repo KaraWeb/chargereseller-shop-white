@@ -599,6 +599,12 @@ div.payment-gateways li.bank-Melli {background-position:-135px -45px;}
 div.payment-gateways li.bank-Fanava {background-position:-180px -45px;}
 div.payment-gateways li.bank-Zarinpal {background-position:-225px -45px;}
 div.payment-gateways li.bank-Emtiyaz {background-position:-270px -45px;}
+div.payment-gateways li.active.bank-Default {
+	background-position: -314px 2px;
+}
+div.payment-gateways li.bank-Default {
+	background-position: -313px -43px;
+}
 /* Active */
 div.payment-gateways li.active.bank-Parsian {background-position:0 0;}
 div.payment-gateways li.active.bank-Mellat {background-position:-45px 0;}
